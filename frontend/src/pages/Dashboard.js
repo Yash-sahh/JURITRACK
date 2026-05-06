@@ -3,7 +3,7 @@ import React from "react";
 function Dashboard({ cases }) {
   return (
     <div>
-      <h2>JuriTrack Dashboard</h2>
+      <h2>NyayaSarthi Dashboard</h2>
 
       <table>
         <thead>

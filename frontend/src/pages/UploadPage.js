@@ -36,7 +36,7 @@ function UploadPage() {
 
     {/* 🔷 NAVBAR */}
     <div className="navbar">
-      <h2>JuriTrack</h2>
+      <h2>NyayaSarthi</h2>
       <p>From Court Judgments to Accountable Action</p>
     </div>
 
