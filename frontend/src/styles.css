@@ -1,105 +1,78 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f5f7fa;
+  font-family: 'Inter', sans-serif;
+  background: #f4f7fb;
 }
 
-h1, h2 {
-  margin: 0;
-}
-
-.container {
-  padding: 20px 40px;
-}
-
-/* 🔷 Navbar */
+/* Navbar */
 .navbar {
-  background: #1e3a5f;
-  color: white;
-  padding: 15px 30px;
+  background: white;
+  padding: 16px 40px;
+  border-bottom: 1px solid #ddd;
 }
 
 .navbar h2 {
   margin: 0;
-}
-
-.navbar p {
-  font-size: 12px;
-  margin: 0;
-}
-
-/* 🔷 Hero Section */
-.hero {
-  margin-top: 20px;
-}
-
-.hero h1 {
   color: #1e3a5f;
-  font-size: 28px;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Hero */
+.hero h1 {
+  font-size: 32px;
+  color: #1e3a5f;
 }
 
 .hero p {
-  margin-top: 10px;
   color: #555;
 }
 
-/* 🔷 Upload */
+/* Upload */
 .upload-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px dashed #ccc;
   margin-top: 20px;
 }
 
+/* Buttons */
 button {
-  padding: 8px 16px;
   background: #1e3a5f;
   color: white;
   border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 6px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-/* 🔷 Features */
-.features {
-  margin-top: 30px;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.feature-card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-}
-
-/* 🔷 Dashboard */
+/* Cards */
+.verify-box,
 .dashboard {
-  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
 }
 
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-  background: #1e3a5f;
-  color: white;
-  padding: 10px;
+  background: #f1f5f9;
 }
-
-td {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-/* Risk Colors */
-.high { color: red; font-weight: bold; }
-.medium { color: orange; font-weight: bold; }
-.low { color: green; font-weight: bold; }
