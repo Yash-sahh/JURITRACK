@@ -1,11 +1,9 @@
-import React from "react";
-
 function Navbar() {
   return (
-    <div style={{ background: "#1e3a5f", color: "#fff", padding: "12px" }}>
+    <div className="navbar">
       <h2>JuriTrack</h2>
-      <p style={{ fontSize: "12px" }}>
-        From Court Judgments to Accountable Action
+      <p style={{ fontSize: "12px", color: "#777" }}>
+        GovTech AI System
       </p>
     </div>
   );
