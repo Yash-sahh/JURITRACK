@@ -5,7 +5,6 @@ function VerifyPage({ data, onApprove }) {
 
   return (
     <div>
-      <h2>Verify Extracted Data</h2>
 
       <p><b>Case:</b> {data.case}</p>
       <p><b>Action:</b> {data.action}</p>
