@@ -1,11 +1,10 @@
 import React from "react";
 
 function VerifyPage({ data, onApprove }) {
-  if (!data) return <div>No Data</div>;
+  if (!data) return null;
 
   return (
-    <div>
-
+    <div className="verify-box">
       <p><b>Case:</b> {data.case}</p>
       <p><b>Action:</b> {data.action}</p>
       <p><b>Department:</b> {data.department}</p>
