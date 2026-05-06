@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import VerifyPage from "./VerifyPage";
 import Dashboard from "./Dashboard";
+import Navbar from "../components/Navbar";
 
 function UploadPage() {
   const [file, setFile] = useState(null);
