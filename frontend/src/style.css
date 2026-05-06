@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.container {
+  padding: 20px 40px;
+}
+
+/* 🔷 Navbar */
+.navbar {
+  background: #1e3a5f;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* 🔷 Hero Section */
+.hero {
+  margin-top: 20px;
+}
+
+.hero h1 {
+  color: #1e3a5f;
+  font-size: 28px;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* 🔷 Upload */
+.upload-box {
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #1e3a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* 🔷 Features */
+.features {
+  margin-top: 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.feature-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 🔷 Dashboard */
+.dashboard {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #1e3a5f;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Risk Colors */
+.high { color: red; font-weight: bold; }
+.medium { color: orange; font-weight: bold; }
+.low { color: green; font-weight: bold; }
