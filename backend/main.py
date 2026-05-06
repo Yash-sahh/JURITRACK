@@ -28,4 +28,7 @@ async def upload_pdf(file: UploadFile = File(...)):
     text = extract_text_from_pdf(file_path)
     result = generate_action_plan(text)
 
-    return result
+    return {
+    "extracted_text": text,
+    "structured_data": result
+}

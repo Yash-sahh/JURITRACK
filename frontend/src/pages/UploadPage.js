@@ -7,7 +7,7 @@ function UploadPage() {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState(null);
   const [approvedCases, setApprovedCases] = useState([]);
-
+  const [extractedText, setExtractedText] = useState("");
   const handleUpload = async () => {
     if (!file) {
       alert("Please select a file");
@@ -19,7 +19,8 @@ function UploadPage() {
 
     try {
       const res = await axios.post("http://localhost:8000/upload", formData);
-      setResult(res.data);
+      setResult(res.data.structured_data);
+      setExtractedText(res.data.extracted_text);
     } catch (error) {
       console.error(error);
       alert("Error processing file");
@@ -29,6 +30,7 @@ function UploadPage() {
   const handleApprove = () => {
     setApprovedCases([...approvedCases, result]);
     setResult(null);
+    setExtractedText("");
   };
 
   return (
@@ -56,6 +58,22 @@ function UploadPage() {
         <input type="file" onChange={(e) => setFile(e.target.files[0])} />
         <button onClick={handleUpload}>Process</button>
       </div>
+      {extractedText && (
+  <div className="verify-box">
+    <h3>📄 Extracted Text (for Verification)</h3>
+    <div style={{
+      maxHeight: "200px",
+      overflowY: "scroll",
+      background: "#fff",
+      padding: "10px",
+      borderRadius: "8px",
+      fontSize: "12px",
+      border: "1px solid #ddd"
+    }}>
+      {extractedText}
+    </div>
+  </div>
+)}
 
       {/* 🔷 FEATURES */}
       <div className="features">
@@ -81,7 +99,7 @@ function UploadPage() {
 
       {/* 🔷 DASHBOARD */}
       <div className="dashboard">
-        <Dashboard cases={approvedCases} />
+        <Dashboard approvedList={approvedCases} />
       </div>
 
     </div>
