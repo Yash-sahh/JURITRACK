@@ -3,10 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import shutil
 from dotenv import load_dotenv
 
+load_dotenv()
+
 from pdf_utils import extract_text_from_pdf
 from ai_processor import generate_action_plan
-
-load_dotenv()
 
 app = FastAPI()
 
