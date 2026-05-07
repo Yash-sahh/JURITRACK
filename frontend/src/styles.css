@@ -1,78 +1,10 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #f4f7fb;
+  background-color: #F8FAFC;
 }
 
-/* Navbar */
-.navbar {
-  background: white;
-  padding: 16px 40px;
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar h2 {
-  margin: 0;
-  color: #1e3a5f;
-}
-
-/* Container */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Hero */
-.hero h1 {
-  font-size: 32px;
-  color: #1e3a5f;
-}
-
-.hero p {
-  color: #555;
-}
-
-/* Upload */
-.upload-box {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px dashed #ccc;
-  margin-top: 20px;
-}
-
-/* Buttons */
-button {
-  background: #1e3a5f;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  margin-left: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* Cards */
-.verify-box,
-.dashboard {
-  background: white;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 12px;
-}
-
-/* Table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background: #f1f5f9;
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
 }

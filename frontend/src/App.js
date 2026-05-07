@@ -3,8 +3,7 @@ import UploadPage from "./pages/UploadPage";
 
 function App() {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>JuriTrack</h1>
+    <div className="text-on-surface bg-[#F8FAFC] min-h-screen">
       <UploadPage />
     </div>
   );
