@@ -3,6 +3,5 @@ uvicorn
 pdfplumber 
 python-multipart
 python-dotenv
-pytesseract
 Pillow
 google-generativeai
