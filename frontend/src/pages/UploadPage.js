@@ -185,7 +185,6 @@ function UploadPage() {
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between items-center">
                   <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Extracted Text</span>
-                  <span className="bg-secondary/10 text-secondary text-[10px] font-black px-2 py-0.5 rounded tracking-tighter">OCR ACTIVE</span>
                 </div>
                 <div className="h-64 overflow-y-auto font-mono text-[13px] text-slate-600 bg-white p-4 rounded-xl border border-slate-200 leading-relaxed shadow-inner">
                   {extractedText ? (
