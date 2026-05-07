@@ -18,6 +18,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    return {"status": "ok"}
+
 @app.post("/upload")
 async def upload_pdf(file: UploadFile = File(...)):
     file_path = f"temp_{file.filename}"
