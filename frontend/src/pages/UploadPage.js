@@ -44,8 +44,15 @@ function UploadPage() {
       const res = await axios.post(`${API_BASE_URL}/upload`, formData);
       setResult(res.data.structured_data);
       setExtractedText(res.data.extracted_text);
-      setUploadStatus("Upload successful. The verification queue is now ready for review.");
-      setUploadError("");
+
+      const backendError = res.data.structured_data?.error;
+      if (backendError) {
+        setUploadError(`Backend error: ${backendError}`);
+        setUploadStatus("");
+      } else {
+        setUploadStatus("Upload successful. The verification queue is now ready for review.");
+        setUploadError("");
+      }
     } catch (error) {
       console.error(error);
       setUploadError("Error processing file. Please try again.");
