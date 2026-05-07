@@ -3,7 +3,7 @@ function Navbar() {
     <header className="flex justify-between items-center h-20 px-margin w-full sticky top-0 z-40 bg-white border-b border-slate-200">
       <div className="flex items-center gap-xl">
         <div className="flex flex-col">
-          <span className="text-2xl font-extrabold text-primary tracking-tight">JuriTrack</span>
+          <span className="text-2xl font-extrabold text-primary tracking-tight">NyayaSarthi</span>
           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary">GovTech AI</span>
         </div>
         <nav className="hidden lg:flex gap-lg items-center h-full ml-8">
