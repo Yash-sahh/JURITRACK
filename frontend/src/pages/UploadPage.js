@@ -40,7 +40,7 @@ function UploadPage() {
     formData.append("file", file);
 
     try {
-      const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+      const API_BASE_URL = process.env.REACT_APP_API_URL || "https://nyayasarthi-production-21cb.up.railway.app/";
       const res = await axios.post(`${API_BASE_URL}/upload`, formData);
       setResult(res.data.structured_data);
       setExtractedText(res.data.extracted_text);
