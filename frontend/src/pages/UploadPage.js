@@ -96,7 +96,7 @@ function UploadPage() {
                 Transforming Court Judgments into <span className="text-secondary">Verified Government Action.</span>
               </h1>
               <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
-                Bridge the critical gap between judicial orders and executive execution. JuriTrack uses explainable AI to parse complex legal documents, identifying mandatory actions for accountable departments.
+                Bridge the critical gap between judicial orders and executive execution. NyayaSarthi uses explainable AI to parse complex legal documents, identifying mandatory actions for accountable departments.
               </p>
             </div>
             <div className="flex flex-wrap gap-md pt-4">
